@@ -2,7 +2,7 @@ class Book {
     constructor(
       title = 'Unknown',
       author = 'Unknown',
-      pages = '0',
+      pages = 'Unknown',
       isRead = false
     ) {
       this.title = title
@@ -162,7 +162,7 @@ const createBookCard = (book) => {
     const getBookFromInput = () => {
       const title = document.getElementById('title').value
       const author = document.getElementById('author').value
-      const pages = document.getElementById('pages').value
+      const pages = document.getElementById('Date').value
       const isRead = document.getElementById('isRead').checked
       return new Book(title, author, pages, isRead)
     }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Library</title>
+    <title>note</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,7 +21,7 @@
   <body>
     <header class="header">
       <div class="container">
-        <h1>library</h1>
+        <h1>Notes</h1>
         <nav>
           <div class="lds-dual-ring active" id="loadingRing"></div>
           <div class="logged-out" id="loggedOut">
@@ -35,7 +35,7 @@
       </div>
     </header>
     <main class="main container">
-      <button class="btn btn-add" id="addBookBtn">+ Add book</button>
+      <button class="btn btn-add" id="addBookBtn">+ Add a note</button>
       <div class="books-grid" id="booksGrid"></div>
     </main>
     <footer class="footer">
@@ -52,7 +52,7 @@
     </footer>
     <div class="modal" id="addBookModal">
       <form class="add-book-form" id="addBookForm">
-        <h3>Add new book</h3>
+        <h3>Add new note</h3>
         <input
           class="input"
           type="text"
@@ -66,20 +66,20 @@
           class="input"
           type="text"
           id="author"
-          placeholder="Author"
+          placeholder="details"
           required
           maxlength="100"
         />
         <input
           class="input"
-          type="number"
-          id="pages"
-          placeholder="Pages"
+          type="text"
+          id="Date"
+          placeholder="Date"
           required
           max="10000"
         />
         <div class="is-read">
-          <label for="is-read">Have you read it?</label>
+          <label for="is-read">Is it done?</label>
           <input class="checkbox" type="checkbox" id="isRead" />
         </div>
         <button class="btn btn-light-green" type="submit">Submit</button>
